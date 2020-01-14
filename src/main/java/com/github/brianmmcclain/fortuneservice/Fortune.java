@@ -7,11 +7,24 @@ import javax.persistence.Id;
 public class Fortune {
 
     @Id
-    private Long id;
-    private String text;
+    private final Long id;
+    private final String text;
 
-    @Override
-    public String toString() {
+    public Fortune() {
+        this.id = 0L;
+        this.text = "No Fortune";
+    }
+
+    public Fortune(long id, String text) {
+        this.id = id;
+        this.text = text;
+    }
+
+    public long getId() {
+        return this.id;
+    }
+
+    public String getText() {
         return this.text;
     }
 }
