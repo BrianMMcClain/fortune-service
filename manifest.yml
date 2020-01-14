@@ -1,0 +1,4 @@
+---
+applications:
+- name: fortune-service
+  path: target/fortune-service-0.0.1-SNAPSHOT.jar
